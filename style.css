@@ -1,0 +1,47 @@
+body{
+    background:#333 ;
+}
+.dorpdownmenu ul, dorpdownmenu li{
+    margin: 0;
+    padding: 0;
+}
+.dorpdownmenu ul{
+         background: gray;
+         list-style: none;
+         width: 100%;
+}
+.dorpdownmenu li{
+    float: left;
+    position: relative;
+    width: auto;
+}
+.dorpdownmenu a{
+    background: #30a6e6;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.dorpdownmenu li:hover a{
+    background: #34495e;
+}
+#submenu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+}
+li:hover  ul#submenu{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+#submenu li{
+    float: none;
+    width: 100%;
+}
